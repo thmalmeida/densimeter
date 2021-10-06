@@ -28,32 +28,17 @@ F 5 "XGZP6897A" H 5500 3650 60  0001 C CNN "Partnumber"
 $EndComp
 $Comp
 L thmalmeida:CONN_4X1 Conn1
-U 1 1 615DF409
-P 4400 3350
-F 0 "Conn1" H 4550 3200 39  0000 C CNN
-F 1 "CONN_4X1" H 4500 3100 39  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4430 3080 60  0001 C CNN
-F 3 "" H 4400 3600 60  0000 C CNN
-F 4 "xxxx" H 4400 3650 60  0001 C CNN "Part Number"
-F 5 "MM" H 4400 3750 60  0001 C CNN "Manufacturer"
-F 6 "mm" H 4400 3850 60  0001 C CNN "Module"
-F 7 "no" H 4400 3950 60  0001 C CNN "Placed Onboard?"
-	1    4400 3350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L thmalmeida:CONN_4X1 Conn2
 U 1 1 615DF971
-P 6600 3350
-F 0 "Conn2" H 6650 3200 39  0000 L CNN
-F 1 "CONN_4X1" H 6550 3100 39  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6630 3080 60  0001 C CNN
-F 3 "" H 6600 3600 60  0000 C CNN
-F 4 "xxxx" H 6600 3650 60  0001 C CNN "Part Number"
-F 5 "MM" H 6600 3750 60  0001 C CNN "Manufacturer"
-F 6 "mm" H 6600 3850 60  0001 C CNN "Module"
-F 7 "no" H 6600 3950 60  0001 C CNN "Placed Onboard?"
-	1    6600 3350
+P 6600 3450
+F 0 "Conn1" H 6650 3300 39  0000 L CNN
+F 1 "CONN_4X1" H 6550 3200 39  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6630 3180 60  0001 C CNN
+F 3 "" H 6600 3700 60  0000 C CNN
+F 4 "xxxx" H 6600 3750 60  0001 C CNN "Part Number"
+F 5 "MM" H 6600 3850 60  0001 C CNN "Manufacturer"
+F 6 "mm" H 6600 3950 60  0001 C CNN "Module"
+F 7 "no" H 6600 4050 60  0001 C CNN "Placed Onboard?"
+	1    6600 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -68,16 +53,11 @@ Wire Wire Line
 	6150 3150 6150 3200
 Connection ~ 6150 3200
 Wire Wire Line
-	6150 3200 6450 3200
-Wire Wire Line
 	6150 2950 6150 2850
 Wire Wire Line
 	6150 2850 4850 2850
 Wire Wire Line
 	4850 2850 4850 3300
-Connection ~ 4850 3300
-Wire Wire Line
-	4850 3300 4550 3300
 $Comp
 L thmalmeida:C_Micro C1
 U 1 1 615E0BAC
@@ -95,4 +75,31 @@ F 9 "yes" H 6400 2800 60  0001 C CNN "Placed Onboard?"
 	1    6150 3050
 	1    0    0    -1  
 $EndComp
+Text Label 6250 3200 0    50   ~ 0
+Gnd
+Text Label 6250 3300 0    50   ~ 0
+SCL
+Text Label 6250 3400 0    50   ~ 0
+SDA
+Text Label 6400 3500 2    50   ~ 0
+Vdd
+Wire Wire Line
+	4850 3300 4850 3700
+Wire Wire Line
+	4850 3700 6150 3700
+Wire Wire Line
+	6150 3700 6150 3500
+Wire Wire Line
+	6150 3500 6450 3500
+Connection ~ 4850 3300
+Wire Wire Line
+	6750 3200 6750 3750
+Wire Wire Line
+	6750 3750 6400 3750
+Wire Wire Line
+	6400 3750 6400 3600
+Wire Wire Line
+	6400 3600 6450 3600
+Wire Wire Line
+	6150 3200 6750 3200
 $EndSCHEMATC
