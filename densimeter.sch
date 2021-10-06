@@ -57,19 +57,50 @@ F 7 "no" H 6600 3950 60  0001 C CNN "Placed Onboard?"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 3300 4550 3300
+	4950 3300 4850 3300
 Wire Wire Line
-	4550 3400 4950 3400
-Wire Wire Line
-	4950 3500 4550 3500
-Wire Wire Line
-	4550 3200 4950 3200
-Wire Wire Line
-	6050 3200 6450 3200
+	6050 3200 6150 3200
 Wire Wire Line
 	6450 3300 6050 3300
 Wire Wire Line
 	6050 3400 6450 3400
 Wire Wire Line
-	6450 3500 6050 3500
+	6150 3150 6150 3200
+Connection ~ 6150 3200
+Wire Wire Line
+	6150 3200 6450 3200
+Wire Wire Line
+	6150 2950 6150 2850
+Wire Wire Line
+	6150 2850 4850 2850
+Wire Wire Line
+	4850 2850 4850 3300
+Connection ~ 4850 3300
+Wire Wire Line
+	4850 3300 4550 3300
+$Comp
+L thmalmeida:C_Micro C1
+U 1 1 615E0BAC
+P 6150 3050
+F 0 "C1" H 6228 3076 30  0000 L CNN
+F 1 "100 nF" H 6228 3020 25  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6400 2700 60  0001 C CNN
+F 3 "" H 6190 3100 60  0000 C CNN
+F 4 "xx" H 6400 3200 60  0001 C CNN "Rated Voltage [V]"
+F 5 "xx" H 6400 3300 60  0001 C CNN "Tolerance [%]"
+F 6 "xxxx" H 6400 3100 60  0001 C CNN "Part Number"
+F 7 "yyyy" H 6400 3000 60  0001 C CNN "Manufacture"
+F 8 "xxx" H 6400 2900 60  0001 C CNN "Module"
+F 9 "yes" H 6400 2800 60  0001 C CNN "Placed Onboard?"
+	1    6150 3050
+	1    0    0    -1  
+$EndComp
+Text Label 6250 3200 0    50   ~ 0
+GND
+Text Label 6250 3300 0    50   ~ 0
+SCL
+Text Label 6250 3400 0    50   ~ 0
+SDA
+Text Label 4750 3300 2    50   ~ 0
+Vdd
 $EndSCHEMATC
