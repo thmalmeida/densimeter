@@ -1,0 +1,46 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# thmalmeida_CONN_4X1
+#
+DEF thmalmeida_CONN_4X1 Conn 0 40 Y Y 1 F N
+F0 "Conn" 175 0 39 V V C CNN
+F1 "thmalmeida_CONN_4X1" 100 0 39 V V C CNN
+F2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" 30 -270 60 H I C CNN
+F3 "" 0 250 60 H V C CNN
+F4 "xxxx" 0 300 60 H I C CNN "Part Number"
+F5 "MM" 0 400 60 H I C CNN "Manufacturer"
+F6 "mm" 0 500 60 H I C CNN "Module"
+F7 "no" 0 600 60 H I C CNN "Placed Onboard?"
+DRAW
+S -50 200 50 -200 0 1 8 f
+X 1 1 -150 150 100 R 39 39 1 1 P
+X 2 2 -150 50 100 R 39 39 1 1 P
+X 3 3 -150 -50 100 R 39 39 1 1 P
+X 4 4 -150 -150 100 R 39 39 1 1 P
+ENDDRAW
+ENDDEF
+#
+# thmalmeida_XGZP6897A
+#
+DEF thmalmeida_XGZP6897A IC 0 40 Y Y 1 F N
+F0 "IC" 0 -200 50 H V C CNN
+F1 "thmalmeida_XGZP6897A" 0 -300 50 H V C CNN
+F2 "Package_DIP:SMDIP-8_W11.48mm" 0 400 60 H I C CNN
+F3 "" -250 -750 60 H I C CNN
+F4 "CFSensor" 0 500 60 H I C CNN "Manufacturer"
+F5 "XGZP6897A" 0 300 60 H I C CNN "Partnumber"
+DRAW
+S -350 250 350 -250 0 1 0 f
+X N/C 1 -550 150 197 R 39 39 1 1 N
+X Vdd 2 -550 50 197 R 39 39 1 1 W
+X N/C 3 -550 -50 197 R 39 39 1 1 N
+X N/C 4 -550 -150 197 R 39 39 1 1 N
+X N/C 5 550 -150 197 L 39 39 1 1 N
+X SDA 6 550 -50 197 L 39 39 1 1 B
+X SCL 7 550 50 197 L 39 39 1 1 B
+X GND 8 550 150 197 L 39 39 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
