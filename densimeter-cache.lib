@@ -42,6 +42,28 @@ X B 2 0 -100 75 U 25 25 1 1 P
 ENDDRAW
 ENDDEF
 #
+# thmalmeida_R_Micro
+#
+DEF thmalmeida_R_Micro R 0 0 N N 1 F N
+F0 "R" 30 60 25 H V C CNN
+F1 "thmalmeida_R_Micro" 70 -50 20 H V C CNN
+F2 "Resistor_SMD:R_0805_2012Metric" 75 -125 60 H I C CNN
+F3 "" 50 70 60 V V C CNN
+F4 "0.1" 0 575 60 H I C CNN "Rated Power [W]"
+F5 "5" 0 650 60 H I C CNN "Tolerance [%]"
+F6 "MCT08050F1001C" 0 250 60 H I C CNN "Part Number"
+F7 "VISHAY" 0 350 60 H I C CNN "Manufacturer"
+F8 "xx" 0 450 60 H I C CNN "Module"
+F9 "yes" 0 525 60 H I C CNN "Placed Onboard?"
+DRAW
+P 3 0 1 0 0 -75 -25 -50 -25 -50 N
+P 3 0 1 0 0 75 -25 50 -25 50 N
+P 6 0 1 0 -25 50 25 25 -25 0 25 -25 -25 -50 -25 -50 N
+X A 1 0 100 25 D 25 25 1 1 P
+X B 2 0 -100 25 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
 # thmalmeida_XGZP6897A
 #
 DEF thmalmeida_XGZP6897A IC 0 40 Y Y 1 F N
