@@ -73,16 +73,17 @@ Wire Wire Line
 Wire Wire Line
 	6450 3500 6050 3500
 $Comp
-L thmalmeida:XGZP6897A IC2
-U 1 1 615E5DCC
-P 5500 4100
-F 0 "IC2" H 5500 4515 50  0000 C CNN
-F 1 "XGZP6897A" H 5500 4424 50  0000 C CNN
-F 2 "Package_DIP:PowerIntegrations_SMD-8C" H 5500 4500 60  0001 C CNN
-F 3 "http://www.cfsensor.com/static/upload/file/20210110/XGZP6897D%20Pressure%20Sensor%20Module.pdf" H 5250 3350 60  0001 C CNN
-F 4 "CFSensor" H 5500 4600 60  0001 C CNN "Manufacturer"
-F 5 "XGZP6897A" H 5500 4400 60  0001 C CNN "Partnumber"
-	1    5500 4100
+L thmalmeida:ESP32 IC?
+U 1 1 615E858E
+P 2650 1850
+F 0 "IC?" H 2650 3115 50  0000 C CNN
+F 1 "ESP32" H 2650 3024 50  0000 C CNN
+F 2 "thmalmeida:ESP32_DEVKIT" H 2700 3050 60  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf" H 2400 1100 60  0001 C CNN
+F 4 "Espressif" H 2750 3300 60  0001 C CNN "Manufacturer"
+F 5 "ESP-WROOM-32" H 2750 3200 60  0001 C CNN "Partnumber"
+F 6 "https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf" H 2650 1850 50  0001 C CNN "Technical Manual"
+	1    2650 1850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
